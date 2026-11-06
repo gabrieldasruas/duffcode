@@ -1,4 +1,4 @@
-# CODEX Tecnologia — Plano de implementação
+# DuffCODE — Plano de implementação
 
 Portfólio/vitrine de sites para empresas, de dois sócios. Mensagem central: **"Crie seu site da forma que você desejar. Veja alguns modelos."**
 

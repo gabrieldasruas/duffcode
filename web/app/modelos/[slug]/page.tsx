@@ -13,7 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const t = templates.find((x) => x.slug === slug);
-  return { title: t ? `Modelo ${t.nome} — Codexa Tecnologia` : "Modelo não encontrado" };
+  return { title: t ? `Modelo ${t.nome} — DuffCODE` : "Modelo não encontrado" };
 }
 
 export default async function ModeloPage({ params }: { params: Promise<{ slug: string }> }) {

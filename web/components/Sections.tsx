@@ -41,7 +41,7 @@ export function About() {
   return (
     <section id="sobre" className="mx-auto max-w-7xl px-4 py-20 sm:px-8 md:py-28">
       <SectionHead
-        eyebrow="sobre a codexa"
+        eyebrow="sobre a duffcode"
         title="Somos uma empresa especializada em soluções web"
         sub="Cuidamos de todo o caminho: da ideia ao site no ar, e depois dele. Planejamento, design, desenvolvimento, publicação e suporte, com atenção ao detalhe e ao resultado do seu negócio."
       />
@@ -90,7 +90,7 @@ export function Footer() {
   return (
     <footer className="mt-auto border-t border-line">
       <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-2 px-4 py-7 text-sm text-muted sm:px-8">
-        <span>© {new Date().getFullYear()} Codexa Tecnologia</span>
+        <span>© {new Date().getFullYear()} DuffCODE</span>
         <span className="font-mono">soluções web sob medida</span>
       </div>
     </footer>

@@ -7,7 +7,7 @@ import { templates } from "@/data/templates";
 import DemoFrame from "./DemoFrame";
 import SectionHead from "./SectionHead";
 
-export const PICK_EVENT = "codex:pick";
+export const PICK_EVENT = "duffcode:pick";
 
 export default function Showcase() {
   const [slug, setSlug] = useState(templates[0].slug);

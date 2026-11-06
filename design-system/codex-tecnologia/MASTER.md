@@ -6,7 +6,7 @@
 
 ---
 
-**Project:** CODEX Tecnologia
+**Project:** DuffCODE
 **Generated:** 2026-10-05 15:00:14
 **Category:** Sustainable Energy / Climate Tech
 **Design Dials:** Variance 7/10 (Balanced / Modern) | Motion 6/10 (Standard) | Density 4/10 (Standard)

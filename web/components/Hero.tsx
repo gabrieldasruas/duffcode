@@ -298,10 +298,10 @@ export default function Hero() {
           animate={{ opacity: mode === "wreath" ? 0.1 : 1 }}
           transition={{ duration: 0.9 }}
           style={{ top: ringCenter }}
-          className="pointer-events-none absolute left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 font-display text-[clamp(4rem,14.5vw,13.5rem)] font-extrabold leading-[.8] tracking-[-.05em] text-white"
+          className="pointer-events-none absolute left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 font-display text-[clamp(3.2rem,11vw,10.5rem)] font-extrabold leading-[.8] tracking-[-.05em] text-white"
         >
-          CODEXA
-          <span className="sr-only"> Tecnologia: crie seu site da forma que você desejar</span>
+          DUFF<span className="text-accent-2">CODE</span>
+          <span className="sr-only">: crie seu site da forma que você desejar</span>
         </motion.h1>
 
         {/* anel 3D */}

@@ -13,7 +13,7 @@ export default function VideoSection() {
           <SectionHead
             eyebrow="em 30 segundos"
             title="Você tem a ideia. A gente cria."
-            sub="Veja como a Codexa transforma a sua ideia em um site pronto: escolha o modelo, e nós cuidamos do resto."
+            sub="Veja como a DuffCODE transforma a sua ideia em um site pronto: escolha o modelo, e nós cuidamos do resto."
           />
           <ul className="mb-8 flex flex-col gap-3">
             {pontos.map((p) => (
@@ -43,7 +43,7 @@ export default function VideoSection() {
               controls
               playsInline
               preload="none"
-              aria-label="Vídeo da Codexa: você tem a ideia, a gente cria"
+              aria-label="Vídeo da DuffCODE: você tem a ideia, a gente cria"
             />
           </div>
           <p className="mt-4 flex items-center justify-center gap-2 font-mono text-xs text-muted">

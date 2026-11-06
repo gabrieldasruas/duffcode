@@ -43,7 +43,7 @@ export const templates: Template[] = [
     slug: "transportadora",
     nome: "Transportadora",
     categoria: "Logística",
-    descricao: "Codexa Transportes: hero com foto da frota, rastreio de carga, cotação de frete, soluções logísticas e filiais.",
+    descricao: "Duff Transportes: hero com foto da frota, rastreio de carga, cotação de frete, soluções logísticas e filiais.",
     tags: ["Cotação", "Rastreio", "Filiais"],
     cores: ["#0a0d12", "#ff6a13", "#f4f6f9"],
     variante: "banner",

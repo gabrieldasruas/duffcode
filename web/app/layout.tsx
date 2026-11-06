@@ -13,9 +13,9 @@ const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"] });
 const oswald = Oswald({ variable: "--font-oswald", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Codexa Tecnologia — Crie seu site da forma que desejar",
+  title: "DuffCODE — Crie seu site da forma que desejar",
   description:
-    "Somos uma empresa especializada em soluções web: sites, lojas virtuais, landing pages e sistemas sob medida. Veja modelos para barbearia, transportadora, joalheria, clínica, restaurante e médicos.",
+    "A DuffCODE é especializada em soluções web: sites, lojas virtuais, landing pages e sistemas sob medida. Veja modelos para barbearia, transportadora, joalheria, clínica, restaurante e médicos.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

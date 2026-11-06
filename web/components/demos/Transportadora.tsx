@@ -70,7 +70,7 @@ function Logo() {
         ))}
       </span>
       <span className="leading-none">
-        <span className="block text-sm font-extrabold tracking-wide">CODEXA</span>
+        <span className="block text-sm font-extrabold tracking-wide">DUFF</span>
         <span className="block text-[9px] font-semibold uppercase tracking-[.3em] opacity-60">Transportes</span>
       </span>
     </span>
@@ -112,7 +112,7 @@ export default function Transportadora({ t }: { t: Template }) {
 
       {/* hero com foto */}
       <header className="relative overflow-hidden">
-        <Image src="/modelos/transportadora/estrada.webp" alt="Caminhões da Codexa Transportes na rodovia ao anoitecer" fill priority sizes="1000px" className="object-cover object-[50%_60%]" />
+        <Image src="/modelos/transportadora/estrada.webp" alt="Caminhões da Duff Transportes na rodovia ao anoitecer" fill priority sizes="1000px" className="object-cover object-[50%_60%]" />
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[var(--c1)] via-[var(--c1)]/85 to-[var(--c1)]/30" />
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[var(--c1)] via-transparent to-[var(--c1)]/40" />
         <div className="relative px-6 pb-10 pt-14 @3xl:pb-14 @3xl:pt-20">
@@ -345,7 +345,7 @@ export default function Transportadora({ t }: { t: Template }) {
       <footer className="border-t border-white/10 px-6 py-7">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Logo />
-          <span className="text-[11px] opacity-50">© 2026 Codexa Transportes · CNPJ 00.000.000/0001-00</span>
+          <span className="text-[11px] opacity-50">© 2026 Duff Transportes · CNPJ 00.000.000/0001-00</span>
         </div>
       </footer>
     </DemoShell>
