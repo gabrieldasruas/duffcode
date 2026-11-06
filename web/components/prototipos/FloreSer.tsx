@@ -110,7 +110,7 @@ export default function FloreSer() {
           <div className="relative mx-auto w-full max-w-[460px]">
             <div aria-hidden="true" className="absolute -left-5 -top-5 h-full w-full rounded-[220px_220px_32px_32px] border-2 border-[var(--g)]/40" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-[220px_220px_32px_32px] shadow-[0_40px_90px_rgba(31,42,68,.25)]">
-              <Image src="/modelos/psicologo/sala.webp" alt="Consultório acolhedor iluminado pelo sol" fill priority sizes="(max-width: 768px) 90vw, 460px" className="object-cover" />
+              <Image src={IMG("silvia")} alt={`${NOME}, psicóloga`} fill priority sizes="(max-width: 768px) 90vw, 460px" className="object-cover object-[62%_30%]" />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[var(--n)]/60 to-transparent" />
             </div>
             <div className="absolute -right-3 top-10 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-[0_20px_45px_rgba(31,42,68,.18)] md:-right-8">
@@ -219,9 +219,13 @@ export default function FloreSer() {
       <section id="sobre" className="scroll-mt-20 bg-white py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[.9fr_1.1fr]">
           <div className="relative mx-auto w-full max-w-[400px]">
+            <div aria-hidden="true" className="absolute -bottom-4 -right-4 h-full w-full rounded-[32px] border-2 border-[var(--g)]/40" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-[32px] bg-[var(--g)]/15">
-              <Image src={IMG("girassol")} alt="Girassol, símbolo da FloreSer" fill sizes="(max-width: 768px) 90vw, 400px" className="object-cover" />
-              <span className="absolute inset-x-4 bottom-4 rounded-2xl bg-white/90 px-4 py-3 text-xs backdrop-blur">📸 Aqui entra a sua foto profissional</span>
+              <Image src="/modelos/psicologo/sala.webp" alt="Consultório acolhedor" fill sizes="(max-width: 768px) 90vw, 400px" className="object-cover" />
+              <div className="absolute inset-x-5 bottom-5 flex items-center gap-3 rounded-2xl bg-white/92 px-4 py-3 backdrop-blur">
+                <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full ring-2 ring-[var(--g)]"><Image src={IMG("silvia")} alt="" fill sizes="56px" className="object-cover object-[62%_25%]" /></span>
+                <span className="leading-tight"><span className="block font-serif text-lg">Silvia Rejane</span><span className="block text-[11px] opacity-60">Psicóloga · FloreSer</span></span>
+              </div>
             </div>
           </div>
           <div>
