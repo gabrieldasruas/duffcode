@@ -1,5 +1,9 @@
 import { MessageCircle, LayoutTemplate, PenTool, Rocket, Globe, ShoppingBag, MousePointerClick, LayoutDashboard, Gauge } from "lucide-react";
+import Link from "next/link";
+import { Code2, Mail } from "lucide-react";
 import SectionHead from "./SectionHead";
+import { InstagramIcon, WhatsAppIcon } from "./BrandIcons";
+import { EMAIL, INSTAGRAM, INSTAGRAM_USER, waLink } from "@/lib/contato";
 
 const steps = [
   { icon: MessageCircle, title: "Conversa rápida", text: "Entendemos seu negócio, público e o que você quer que o site faça." },
@@ -57,41 +61,50 @@ export function About() {
     </section>
   );
 }
-const field =
-  "min-h-[46px] rounded-[10px] border border-line bg-surface px-3.5 py-2.5 text-text outline-offset-1 focus:outline-2 focus:outline-accent-2";
-
-/** Somente visual por enquanto: o envio será ligado na fase de funcionalidade. */
-export function Contact() {
-  return (
-    <section id="contato" className="mx-auto max-w-7xl px-4 py-20 sm:px-8 md:py-28">
-      <SectionHead eyebrow="contato" title="Vamos criar o seu site" sub="Conte um pouco sobre o seu negócio e respondemos em até 1 dia útil." />
-      <form className="grid max-w-3xl gap-4 sm:grid-cols-2" aria-label="Formulário de contato">
-        <label className="flex flex-col gap-1.5 text-sm text-muted">
-          Nome
-          <input name="nome" autoComplete="name" className={field} />
-        </label>
-        <label className="flex flex-col gap-1.5 text-sm text-muted">
-          WhatsApp ou e-mail
-          <input name="contato" autoComplete="email" className={field} />
-        </label>
-        <label className="flex flex-col gap-1.5 text-sm text-muted sm:col-span-2">
-          Mensagem
-          <textarea name="msg" rows={4} className={field} />
-        </label>
-        <button type="button" className="min-h-11 w-fit cursor-pointer rounded-full bg-accent px-6 font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(109,74,255,.5)] sm:col-span-2">
-          Enviar pedido
-        </button>
-      </form>
-    </section>
-  );
-}
-
 export function Footer() {
+  const links = [
+    ["Início", "/#"], ["Modelos", "/#modelos"], ["Como funciona", "/#processo"], ["Depoimentos", "/#depoimentos"], ["Orçamento", "/#contato"],
+  ];
+  const servicos = ["Sites institucionais", "Landing pages", "Lojas virtuais", "Sistemas e painéis", "Identidade visual"];
+  const social = "grid h-12 w-12 place-items-center rounded-2xl border border-line bg-surface text-muted transition hover:-translate-y-0.5 hover:border-accent hover:text-text";
   return (
-    <footer className="mt-auto border-t border-line">
-      <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-2 px-4 py-7 text-sm text-muted sm:px-8">
-        <span>© {new Date().getFullYear()} DuffCODE</span>
-        <span className="font-mono">soluções web sob medida</span>
+    <footer className="mt-auto border-t border-line bg-[radial-gradient(ellipse_at_50%_0%,rgba(109,74,255,.12),transparent_60%)]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+        <div>
+          <Link href="/" className="mb-4 inline-flex items-center gap-2.5 font-display text-2xl font-extrabold tracking-[-.03em]">
+            <Code2 className="h-6 w-6 text-accent" aria-hidden="true" /><span>Duff<span className="text-accent-2">CODE</span></span>
+          </Link>
+          <p className="mb-6 max-w-xs text-sm leading-relaxed text-muted">Transformamos ideias em sites que trabalham por você. Design premium, desenvolvimento sob medida e foco em resultado.</p>
+          <div className="flex gap-3">
+            <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label={`Instagram ${INSTAGRAM_USER}`} className={social}><InstagramIcon /></a>
+            <a href={waLink()} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={social}><WhatsAppIcon /></a>
+            <a href={`mailto:${EMAIL}`} aria-label={`E-mail ${EMAIL}`} className={social}><Mail className="h-5 w-5" aria-hidden="true" /></a>
+          </div>
+        </div>
+        <nav aria-label="Links rápidos">
+          <h3 className="mb-4 font-semibold">Links rápidos</h3>
+          <ul className="flex flex-col gap-3 text-sm text-muted">
+            {links.map(([l, h]) => <li key={l}><Link href={h} className="transition hover:text-text">{l}</Link></li>)}
+          </ul>
+        </nav>
+        <div>
+          <h3 className="mb-4 font-semibold">Serviços</h3>
+          <ul className="flex flex-col gap-3 text-sm text-muted">{servicos.map((s) => <li key={s}>{s}</li>)}</ul>
+        </div>
+        <div>
+          <h3 className="mb-4 font-semibold">Contato</h3>
+          <ul className="flex flex-col gap-3 text-sm text-muted">
+            <li><a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-text"><WhatsAppIcon className="h-4 w-4" />+55 47 9946-8154</a></li>
+            <li><a href={`mailto:${EMAIL}`} className="inline-flex items-center gap-2 break-all transition hover:text-text"><Mail className="h-4 w-4 shrink-0" aria-hidden="true" />{EMAIL}</a></li>
+            <li><a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-text"><InstagramIcon className="h-4 w-4" />{INSTAGRAM_USER}</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-line">
+        <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-2 px-4 py-6 pr-24 text-sm text-muted sm:px-8 sm:pr-28">
+          <span>© {new Date().getFullYear()} DuffCODE · Todos os direitos reservados</span>
+          <span className="font-mono">duffcode.dev</span>
+        </div>
       </div>
     </footer>
   );

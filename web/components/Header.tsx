@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { Code2 } from "lucide-react";
+import { WhatsAppIcon } from "./BrandIcons";
+import { waLink } from "@/lib/contato";
 
 const links = [
   { href: "/#modelos", label: "Modelos" },
   { href: "/#sobre", label: "Sobre" },
   { href: "/#processo", label: "Como funciona" },
+  { href: "/#contato", label: "Orçamento" },
 ];
 
 export default function Header() {
@@ -23,12 +26,16 @@ export default function Header() {
               {l.label}
             </Link>
           ))}
-          <Link
-            href="/#contato"
-            className="inline-flex min-h-10 cursor-pointer items-center rounded-full bg-accent px-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(109,74,255,.5)]"
+          <a
+            href={waLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-10 cursor-pointer items-center gap-2 rounded-full bg-gradient-to-r from-accent to-[#a855f7] px-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(109,74,255,.5)]"
           >
-            Fale conosco
-          </Link>
+            <WhatsAppIcon className="h-4 w-4" />
+            <span className="hidden sm:inline">Falar no WhatsApp</span>
+            <span className="sm:hidden">WhatsApp</span>
+          </a>
         </nav>
       </div>
     </header>
