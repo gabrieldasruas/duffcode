@@ -11,9 +11,9 @@ export default function VideoSection() {
       <div className="grid items-center gap-12 lg:grid-cols-[1fr_auto] lg:gap-20">
         <div>
           <SectionHead
-            eyebrow="em 30 segundos"
-            title="Você tem a ideia. A gente cria."
-            sub="Veja como a DuffCODE transforma a sua ideia em um site pronto: escolha o modelo, e nós cuidamos do resto."
+            eyebrow="em 40 segundos"
+            title="Um site que trabalha por você."
+            sub="Do WhatsApp lotado a um site que agenda, vende e recebe pedidos sozinho. Veja como a DuffCODE faz isso pelo seu negócio."
           />
           <ul className="mb-8 flex flex-col gap-3">
             {pontos.map((p) => (
@@ -38,12 +38,12 @@ export default function VideoSection() {
           <div className="overflow-hidden rounded-[34px] border-[6px] border-[#0b0b10] bg-black shadow-[0_40px_100px_rgba(0,0,0,.65)] ring-1 ring-white/20">
             <video
               className="block aspect-[9/16] w-full bg-black"
-              src="/video/codexa-anuncio-v2.mp4"
-              poster="/video/codexa-anuncio-v2-capa.webp"
+              src="/video/duffcode-historia.mp4"
+              poster="/video/duffcode-historia-capa.webp"
               controls
               playsInline
               preload="none"
-              aria-label="Vídeo da DuffCODE: você tem a ideia, a gente cria"
+              aria-label="Vídeo da DuffCODE: um site que trabalha por você"
             />
           </div>
           <p className="mt-4 flex items-center justify-center gap-2 font-mono text-xs text-muted">
