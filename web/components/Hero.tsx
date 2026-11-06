@@ -296,14 +296,21 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* marca, atrás do anel */}
+        {/* marca na frente do anel: um véu escuro atrás das letras garante a leitura com os cartões girando */}
+        <motion.div
+          aria-hidden="true"
+          animate={{ opacity: mode === "wreath" ? 0 : 1 }}
+          transition={{ duration: 0.9 }}
+          style={{ top: ringCenter }}
+          className="pointer-events-none absolute left-1/2 z-[19] h-[clamp(9rem,22vw,20rem)] w-[min(96vw,74rem)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(6,7,10,.82)_0%,rgba(6,7,10,.55)_38%,transparent_70%)] blur-xl"
+        />
         <motion.h1
           animate={{ opacity: mode === "wreath" ? 0.1 : 1 }}
           transition={{ duration: 0.9 }}
-          style={{ top: ringCenter }}
-          className="pointer-events-none absolute left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 font-display text-[clamp(3.2rem,11vw,10.5rem)] font-extrabold leading-[.8] tracking-[-.05em] text-white"
+          style={{ top: ringCenter, textShadow: "0 10px 40px rgba(0,0,0,.9), 0 0 90px rgba(109,74,255,.55)" }}
+          className="pointer-events-none absolute left-1/2 z-20 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-display text-[clamp(3.6rem,13vw,12.5rem)] font-extrabold leading-[.8] tracking-[-.05em] text-white"
         >
-          DUFF<span className="text-accent-2">CODE</span>
+          DUFF<span className="bg-gradient-to-b from-[#d9ccff] to-[#8b6bff] bg-clip-text text-transparent">CODE</span>
           <span className="sr-only">: crie seu site da forma que você desejar</span>
         </motion.h1>
 
