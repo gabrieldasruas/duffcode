@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Code2, Mail } from "lucide-react";
 import SectionHead from "./SectionHead";
 import { InstagramIcon, WhatsAppIcon } from "./BrandIcons";
-import { EMAIL, INSTAGRAM, INSTAGRAM_USER, waLink } from "@/lib/contato";
+import { EMAIL, INSTAGRAM, INSTAGRAM_USER, WHATSAPP_TXT, waLink } from "@/lib/contato";
 
 const steps = [
   { icon: MessageCircle, title: "Conversa rápida", text: "Entendemos seu negócio, público e o que você quer que o site faça." },
@@ -94,7 +94,7 @@ export function Footer() {
         <div>
           <h3 className="mb-4 font-semibold">Contato</h3>
           <ul className="flex flex-col gap-3 text-sm text-muted">
-            <li><a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-text"><WhatsAppIcon className="h-4 w-4" />+55 47 9946-8154</a></li>
+            <li><a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-text"><WhatsAppIcon className="h-4 w-4" />{WHATSAPP_TXT}</a></li>
             <li><a href={`mailto:${EMAIL}`} className="inline-flex items-center gap-2 break-all transition hover:text-text"><Mail className="h-4 w-4 shrink-0" aria-hidden="true" />{EMAIL}</a></li>
             <li><a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-text"><InstagramIcon className="h-4 w-4" />{INSTAGRAM_USER}</a></li>
           </ul>
