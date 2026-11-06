@@ -51,12 +51,15 @@ const cards: Card[] = Array.from({ length: N }, (_, i) => {
 });
 
 const labels = [
-  { slug: "barbearia", side: "left", top: "47%" },
-  { slug: "joalheria", side: "left", top: "62%" },
-  { slug: "restaurante", side: "left", top: "77%" },
+  { slug: "barbearia", side: "left", top: "44%" },
+  { slug: "joalheria", side: "left", top: "56%" },
+  { slug: "restaurante", side: "left", top: "68%" },
+  { slug: "psicologo", side: "left", top: "80%" },
   { slug: "transportadora", side: "right", top: "38%" },
-  { slug: "clinica", side: "right", top: "62%" },
-  { slug: "medico", side: "right", top: "77%" },
+  { slug: "clinica", side: "right", top: "50%" },
+  { slug: "medico", side: "right", top: "62%" },
+  { slug: "advogado", side: "right", top: "74%" },
+  { slug: "corretor", side: "right", top: "86%" },
 ] as const;
 
 const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
