@@ -113,7 +113,7 @@ export default function FloreSer() {
               <Image src={IMG("silvia")} alt={`${NOME}, psicóloga`} fill priority sizes="(max-width: 768px) 90vw, 460px" className="object-cover object-[62%_30%]" />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[var(--n)]/60 to-transparent" />
             </div>
-            <div className="absolute -right-3 top-10 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-[0_20px_45px_rgba(31,42,68,.18)] md:-right-8">
+            <div className="absolute -right-2 -top-10 z-10 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-[0_20px_45px_rgba(31,42,68,.18)] md:-right-14 md:-top-8">
               <span className="relative h-12 w-12 overflow-hidden rounded-full"><Image src={IMG("girassol")} alt="" fill sizes="48px" className="object-cover object-top" /></span>
               <span className="leading-tight"><span className="block font-serif text-lg">FloreSer</span><span className="block text-[11px] opacity-60">cuidado que acolhe</span></span>
             </div>
